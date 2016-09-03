@@ -1,9 +1,9 @@
-﻿Log file open, 09/03/16 16:22:26
+﻿Log file open, 09/03/16 17:39:58
 LogInit:Display: Running engine for game: MyUe4ProjectTest
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-102708406) SRandInit(-102708406).
+LogInit:Display: RandInit(-1865449872) SRandInit(-1865449872).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.084878
+LogStats: Stats thread started at 0.080552
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files (x86)/Epic Games/4.13/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files (x86)/Epic Games/4.13/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files (x86)/Epic Games/4.13/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -128,719 +128,447 @@ LogInit: Compiled (64-bit): Aug 30 2016 18:11:39
 LogInit: Compiled with Visual C++: 19.00.23026.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.13
-LogInit: Command line: -EpicPortal 
+LogInit: Command line:  
 LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.13/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2016.09.03-14.22.26:226][  0]LogInit: Selected Device Profile: [Windows]
-[2016.09.03-14.22.26:226][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.09.03-14.22.26:256][  0]LogInit: Computer: DESKTOP-LJMHOM9
-[2016.09.03-14.22.26:256][  0]LogInit: User: kille
-[2016.09.03-14.22.26:256][  0]LogInit: CPU Page size=65536, Cores=4
-[2016.09.03-14.22.26:256][  0]LogInit: High frequency timer resolution =3.312642 MHz
-[2016.09.03-14.22.26:256][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2016.09.03-14.22.26:256][  0]LogMemory: Platform Memory Stats for Windows
-[2016.09.03-14.22.26:256][  0]LogMemory: Process Physical Memory: 255.72 MB used, 255.72 MB peak
-[2016.09.03-14.22.26:256][  0]LogMemory: Process Virtual Memory: 259.71 MB used, 259.71 MB peak
-[2016.09.03-14.22.26:256][  0]LogMemory: Physical Memory: 3699.88 MB used, 16272.00 MB total
-[2016.09.03-14.22.26:256][  0]LogMemory: Virtual Memory: 623.38 MB used, 134217728.00 MB total
-[2016.09.03-14.22.26:379][  0]LogTextLocalizationManager: No translations for ('it-IT') exist, falling back to 'en' for localization and internationalization data.
-[2016.09.03-14.22.29:443][  0]LogD3D11RHI: D3D11 adapters:
-[2016.09.03-14.22.29:480][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
-[2016.09.03-14.22.29:480][  0]LogD3D11RHI:       6100/0/8135 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2016.09.03-14.22.29:486][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
-[2016.09.03-14.22.29:486][  0]LogD3D11RHI:       112/0/8135 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2016.09.03-14.22.29:488][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2016.09.03-14.22.29:488][  0]LogD3D11RHI:       0/0/8135 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2016.09.03-14.22.29:488][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2016.09.03-14.22.29:492][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2016.09.03-14.22.29:492][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
-[2016.09.03-14.22.29:492][  0]LogWindows: EnumDisplayDevices:
-[2016.09.03-14.22.29:492][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
-[2016.09.03-14.22.29:492][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
-[2016.09.03-14.22.29:492][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
-[2016.09.03-14.22.29:493][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
-[2016.09.03-14.22.29:493][  0]LogWindows:    4. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2016.09.03-14.22.29:493][  0]LogWindows:    5. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2016.09.03-14.22.29:493][  0]LogWindows:    6. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2016.09.03-14.22.29:493][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
-[2016.09.03-14.22.29:493][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
-[2016.09.03-14.22.29:493][  0]LogD3D11RHI:   Driver Version: 372.54 (internal:21.21.13.7254, unified:372.54)
-[2016.09.03-14.22.29:493][  0]LogD3D11RHI:      Driver Date: 8-11-2016
-[2016.09.03-14.22.29:493][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.09.03-14.22.29:508][  0]LogD3D11RHI: Async texture creation enabled
-[2016.09.03-14.22.29:516][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2016.09.03-14.22.29:516][  0]LogShaderCompilers: Guid format shader working directory is -34 characters bigger than the processId version (../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Intermediate/Shaders/WorkingDirectory/7580/).
-[2016.09.03-14.22.29:516][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/kille/AppData/Local/Temp/UnrealShaderWorkingDir/1BAFB140424A54441F2BED8FAE6427E7/'.
-[2016.09.03-14.22.29:516][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.09.03-14.22.32:862][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.09.03-14.22.32:870][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.09.03-14.22.32:879][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.09.03-14.22.32:887][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.09.03-14.22.32:895][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.09.03-14.22.32:912][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.09.03-14.22.32:919][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.09.03-14.22.32:925][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.09.03-14.22.32:931][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.09.03-14.22.32:938][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.09.03-14.22.32:944][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.09.03-14.22.32:956][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.09.03-14.22.32:956][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.09.03-14.22.32:957][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.09.03-14.22.32:985][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.09.03-14.22.32:990][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2016.09.03-14.22.32:996][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2016.09.03-14.22.33:002][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.09.03-14.22.33:008][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.09.03-14.22.33:016][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.09.03-14.22.33:016][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.09.03-14.22.33:107][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.09.03-14.22.33:696][  0]LogDerivedDataCache: Loaded boot cache 0.59s 76MB C:/Users/kille/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
-[2016.09.03-14.22.33:696][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/kille/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc
-[2016.09.03-14.22.33:696][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.09.03-14.22.33:696][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.09.03-14.22.33:697][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.09.03-14.22.33:697][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.09.03-14.22.33:739][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.09.03-14.22.33:763][  0]LogDerivedDataCache: Using Local data cache path C:/Users/kille/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.09.03-14.22.33:956][  0]LogInit: Selected Device Profile: [Windows]
-[2016.09.03-14.22.33:959][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2016.09.03-14.22.34:077][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.09.03-14.22.34:077][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.09.03-14.22.34:077][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2016.09.03-14.22.34:142][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2016.09.03-14.22.34:690][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: myue4projecttest, ProjectVersion: , EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2637872481
-[2016.09.03-14.22.34:725][  0]LogAssetRegistry: FAssetRegistry took 0.0211 seconds to start up
-[2016.09.03-14.22.34:795][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.067166 seconds
-[2016.09.03-14.22.34:799][  0]LogUObjectArray: 29777 objects as part of root set at end of initial load.
-[2016.09.03-14.22.34:799][  0]LogUObjectAllocator: 6124696 out of 0 bytes used by permanent object pool.
-[2016.09.03-14.22.34:799][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2016.09.03-14.22.34:809][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.09.03-14.22.35:733][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.09.03-14.22.35:733][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.09.03-14.23.16:717][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.09.03-14.23.17:193][  0]SourceControl: Info Source control is disabled
-[2016.09.03-14.23.17:195][  0]SourceControl: Info Source control is disabled
-[2016.09.03-14.23.17:211][  0]SourceControl: Info Source control is disabled
-[2016.09.03-14.23.17:224][  0]SourceControl: Info Source control is disabled
-[2016.09.03-14.23.17:931][  0]LogEngine: Initializing Engine...
-[2016.09.03-14.23.17:931][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2016.09.03-14.23.18:056][  0]LogAIModule: Creating AISystem for world Untitled
-[2016.09.03-14.23.18:066][  0]LogInit: XAudio2 using 'Altoparlanti (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.09.03-14.23.18:077][  0]LogInit: FAudioDevice initialized.
-[2016.09.03-14.23.18:107][  0]LogDerivedDataCache: Saved boot cache 0.03s 62MB C:/Users/kille/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
-[2016.09.03-14.23.18:114][  0]LogInit: Texture streaming: Enabled
-[2016.09.03-14.23.18:142][  0]LogInit: Transaction tracking system initialized
-[2016.09.03-14.23.18:170][  0]BlueprintLog: New page: Editor Load
-[2016.09.03-14.23.18:460][  0]LocalizationService: Info Localization service is disabled
-[2016.09.03-14.23.18:936][  0]LogConsoleResponse:Display: 
-[2016.09.03-14.23.19:269][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2016.09.03-14.23.19:269][  0]LogCook:Display: Mobile HDR setting 1
-[2016.09.03-14.23.19:901][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/' took 0.01s
-[2016.09.03-14.23.19:901][  0]SourceControl: Info Source control is disabled
-[2016.09.03-14.23.19:903][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files (x86)/Epic Games/4.13/FeaturePacks/StarterContent.upack)
-[2016.09.03-14.23.19:931][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
-[2016.09.03-14.23.20:005][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Floor_400x400.uasset"
-[2016.09.03-14.23.20:010][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Pillar_50x500.uasset"
-[2016.09.03-14.23.20:039][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
-[2016.09.03-14.23.20:078][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Wall_400x200.uasset"
-[2016.09.03-14.23.20:083][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Wall_400x300.uasset"
-[2016.09.03-14.23.20:087][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Wall_400x400.uasset"
-[2016.09.03-14.23.20:090][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Wall_500x500.uasset"
-[2016.09.03-14.23.20:094][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
-[2016.09.03-14.23.20:097][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
-[2016.09.03-14.23.20:100][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
-[2016.09.03-14.23.20:103][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
-[2016.09.03-14.23.20:107][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Collapse01.uasset"
-[2016.09.03-14.23.20:111][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Collapse02.uasset"
-[2016.09.03-14.23.20:124][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Collapse_Cue.uasset"
-[2016.09.03-14.23.20:128][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Explosion01.uasset"
-[2016.09.03-14.23.20:131][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Explosion02.uasset"
-[2016.09.03-14.23.20:142][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Explosion_Cue.uasset"
-[2016.09.03-14.23.20:147][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Fire01.uasset"
-[2016.09.03-14.23.20:156][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Fire01_Cue.uasset"
-[2016.09.03-14.23.20:173][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Fire_Sparks01.uasset"
-[2016.09.03-14.23.20:188][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
-[2016.09.03-14.23.20:192][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Light01.uasset"
-[2016.09.03-14.23.20:203][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Light01_Cue.uasset"
-[2016.09.03-14.23.20:221][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Light02.uasset"
-[2016.09.03-14.23.20:231][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Light02_Cue.uasset"
-[2016.09.03-14.23.20:248][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Smoke01.uasset"
-[2016.09.03-14.23.20:260][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Smoke01_Cue.uasset"
-[2016.09.03-14.23.20:275][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
-[2016.09.03-14.23.20:324][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Starter_Birds01.uasset"
-[2016.09.03-14.23.20:390][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Starter_Music01.uasset"
-[2016.09.03-14.23.20:396][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
-[2016.09.03-14.23.20:444][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Starter_Wind05.uasset"
-[2016.09.03-14.23.20:537][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Starter_Wind06.uasset"
-[2016.09.03-14.23.20:548][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Steam01.uasset"
-[2016.09.03-14.23.20:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Audio/Steam01_Cue.uasset"
-[2016.09.03-14.23.20:570][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
-[2016.09.03-14.23.20:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
-[2016.09.03-14.23.20:590][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
-[2016.09.03-14.23.20:596][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
-[2016.09.03-14.23.20:616][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
-[2016.09.03-14.23.20:623][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
-[2016.09.03-14.23.20:628][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
-[2016.09.03-14.23.20:634][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
-[2016.09.03-14.23.20:647][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
-[2016.09.03-14.23.20:652][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
-[2016.09.03-14.23.20:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
-[2016.09.03-14.23.20:661][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
-[2016.09.03-14.23.20:666][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
-[2016.09.03-14.23.20:673][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
-[2016.09.03-14.23.20:679][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
-[2016.09.03-14.23.20:694][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
-[2016.09.03-14.23.21:135][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
-[2016.09.03-14.23.21:202][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Maps/Advanced_Lighting.umap"
-[2016.09.03-14.23.21:224][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Maps/Minimal_Default.umap"
-[2016.09.03-14.23.21:859][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Maps/StarterMap.umap"
-[2016.09.03-14.23.21:908][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_AssetPlatform.uasset"
-[2016.09.03-14.23.21:932][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Basic_Floor.uasset"
-[2016.09.03-14.23.21:939][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Basic_Wall.uasset"
-[2016.09.03-14.23.21:957][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
-[2016.09.03-14.23.21:965][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
-[2016.09.03-14.23.21:991][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
-[2016.09.03-14.23.22:009][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
-[2016.09.03-14.23.22:040][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
-[2016.09.03-14.23.22:056][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
-[2016.09.03-14.23.22:058][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
-[2016.09.03-14.23.22:069][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
-[2016.09.03-14.23.22:072][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
-[2016.09.03-14.23.22:088][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
-[2016.09.03-14.23.22:124][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
-[2016.09.03-14.23.22:133][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
-[2016.09.03-14.23.22:145][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
-[2016.09.03-14.23.22:162][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
-[2016.09.03-14.23.22:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Glass.uasset"
-[2016.09.03-14.23.22:166][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Ground_Grass.uasset"
-[2016.09.03-14.23.22:169][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
-[2016.09.03-14.23.22:203][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Ground_Moss.uasset"
-[2016.09.03-14.23.22:205][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
-[2016.09.03-14.23.22:207][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
-[2016.09.03-14.23.22:223][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
-[2016.09.03-14.23.22:226][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Metal_Copper.uasset"
-[2016.09.03-14.23.22:229][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Metal_Gold.uasset"
-[2016.09.03-14.23.22:233][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Metal_Rust.uasset"
-[2016.09.03-14.23.22:242][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Metal_Steel.uasset"
-[2016.09.03-14.23.22:245][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
-[2016.09.03-14.23.22:247][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
-[2016.09.03-14.23.22:275][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
-[2016.09.03-14.23.22:277][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Rock_Slate.uasset"
-[2016.09.03-14.23.22:293][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
-[2016.09.03-14.23.22:295][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
-[2016.09.03-14.23.22:317][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
-[2016.09.03-14.23.22:319][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Tech_Panel.uasset"
-[2016.09.03-14.23.22:321][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Water_Lake.uasset"
-[2016.09.03-14.23.22:344][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Water_Ocean.uasset"
-[2016.09.03-14.23.22:359][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
-[2016.09.03-14.23.22:362][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
-[2016.09.03-14.23.22:364][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Wood_Oak.uasset"
-[2016.09.03-14.23.22:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Wood_Pine.uasset"
-[2016.09.03-14.23.22:370][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
-[2016.09.03-14.23.22:384][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
-[2016.09.03-14.23.22:391][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/P_Explosion.uasset"
-[2016.09.03-14.23.22:396][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/P_Fire.uasset"
-[2016.09.03-14.23.22:400][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/P_Smoke.uasset"
-[2016.09.03-14.23.22:404][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/P_Sparks.uasset"
-[2016.09.03-14.23.22:409][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/P_Steam_Lit.uasset"
-[2016.09.03-14.23.22:413][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/M_Burst.uasset"
-[2016.09.03-14.23.22:417][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
-[2016.09.03-14.23.22:420][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
-[2016.09.03-14.23.22:425][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
-[2016.09.03-14.23.22:440][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
-[2016.09.03-14.23.22:444][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
-[2016.09.03-14.23.22:447][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
-[2016.09.03-14.23.22:450][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
-[2016.09.03-14.23.22:453][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
-[2016.09.03-14.23.22:468][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Particles/Materials/M_Spark.uasset"
-[2016.09.03-14.23.22:488][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/MaterialSphere.uasset"
-[2016.09.03-14.23.22:499][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Bush.uasset"
-[2016.09.03-14.23.22:505][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Chair.uasset"
-[2016.09.03-14.23.22:508][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_CornerFrame.uasset"
-[2016.09.03-14.23.22:513][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Couch.uasset"
-[2016.09.03-14.23.22:518][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Door.uasset"
-[2016.09.03-14.23.22:522][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_DoorFrame.uasset"
-[2016.09.03-14.23.22:526][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_GlassWindow.uasset"
-[2016.09.03-14.23.22:540][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
-[2016.09.03-14.23.22:544][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
-[2016.09.03-14.23.22:577][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
-[2016.09.03-14.23.22:580][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_PillarFrame.uasset"
-[2016.09.03-14.23.22:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_PillarFrame300.uasset"
-[2016.09.03-14.23.22:585][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Rock.uasset"
-[2016.09.03-14.23.22:588][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Shelf.uasset"
-[2016.09.03-14.23.22:592][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Stairs.uasset"
-[2016.09.03-14.23.22:597][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_Statue.uasset"
-[2016.09.03-14.23.22:649][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_TableRound.uasset"
-[2016.09.03-14.23.22:653][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/SM_WindowFrame.uasset"
-[2016.09.03-14.23.22:667][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_Bush.uasset"
-[2016.09.03-14.23.22:681][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_Chair.uasset"
-[2016.09.03-14.23.22:689][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_Door.uasset"
-[2016.09.03-14.23.22:695][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_Frame.uasset"
-[2016.09.03-14.23.22:723][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_Lamp.uasset"
-[2016.09.03-14.23.23:126][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
-[2016.09.03-14.23.23:149][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
-[2016.09.03-14.23.23:153][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_Rock.uasset"
-[2016.09.03-14.23.23:157][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_Shelf.uasset"
-[2016.09.03-14.23.23:162][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_Statue.uasset"
-[2016.09.03-14.23.23:166][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
-[2016.09.03-14.23.23:171][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Props/Materials/M_TableRound.uasset"
-[2016.09.03-14.23.23:182][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Cone.uasset"
-[2016.09.03-14.23.23:187][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Cube.uasset"
-[2016.09.03-14.23.23:192][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
-[2016.09.03-14.23.23:197][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
-[2016.09.03-14.23.23:201][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Pipe.uasset"
-[2016.09.03-14.23.23:206][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
-[2016.09.03-14.23.23:215][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
-[2016.09.03-14.23.23:219][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Plane.uasset"
-[2016.09.03-14.23.23:223][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
-[2016.09.03-14.23.23:229][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Sphere.uasset"
-[2016.09.03-14.23.23:236][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Torus.uasset"
-[2016.09.03-14.23.23:249][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Trim.uasset"
-[2016.09.03-14.23.23:253][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
-[2016.09.03-14.23.23:258][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
-[2016.09.03-14.23.23:261][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
-[2016.09.03-14.23.23:266][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Tube.uasset"
-[2016.09.03-14.23.23:286][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
-[2016.09.03-14.23.23:291][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
-[2016.09.03-14.23.23:318][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
-[2016.09.03-14.23.23:403][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
-[2016.09.03-14.23.23:511][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
-[2016.09.03-14.23.23:606][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
-[2016.09.03-14.23.23:869][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
-[2016.09.03-14.23.23:945][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
-[2016.09.03-14.23.24:308][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
-[2016.09.03-14.23.24:457][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
-[2016.09.03-14.23.24:524][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
-[2016.09.03-14.23.24:636][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
-[2016.09.03-14.23.24:746][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
-[2016.09.03-14.23.24:848][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
-[2016.09.03-14.23.24:906][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
-[2016.09.03-14.23.24:998][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
-[2016.09.03-14.23.25:071][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Burst_M.uasset"
-[2016.09.03-14.23.25:087][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Bush_D.uasset"
-[2016.09.03-14.23.25:104][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Bush_N.uasset"
-[2016.09.03-14.23.25:121][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
-[2016.09.03-14.23.25:152][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
-[2016.09.03-14.23.25:176][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Chair_M.uasset"
-[2016.09.03-14.23.25:210][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Chair_N.uasset"
-[2016.09.03-14.23.25:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
-[2016.09.03-14.23.25:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
-[2016.09.03-14.23.25:369][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
-[2016.09.03-14.23.26:435][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
-[2016.09.03-14.23.26:495][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
-[2016.09.03-14.23.26:593][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
-[2016.09.03-14.23.26:660][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
-[2016.09.03-14.23.26:736][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
-[2016.09.03-14.23.27:097][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
-[2016.09.03-14.23.27:244][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
-[2016.09.03-14.23.27:363][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
-[2016.09.03-14.23.27:448][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
-[2016.09.03-14.23.27:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
-[2016.09.03-14.23.27:714][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
-[2016.09.03-14.23.27:780][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
-[2016.09.03-14.23.27:848][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
-[2016.09.03-14.23.27:918][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
-[2016.09.03-14.23.27:951][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
-[2016.09.03-14.23.27:984][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
-[2016.09.03-14.23.28:006][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Door_M.uasset"
-[2016.09.03-14.23.28:026][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Door_N.uasset"
-[2016.09.03-14.23.28:037][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
-[2016.09.03-14.23.28:077][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
-[2016.09.03-14.23.28:094][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
-[2016.09.03-14.23.28:431][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
-[2016.09.03-14.23.28:487][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Frame_M.uasset"
-[2016.09.03-14.23.28:682][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Frame_N.uasset"
-[2016.09.03-14.23.28:699][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Gradinet_01.uasset"
-[2016.09.03-14.23.28:831][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
-[2016.09.03-14.23.28:982][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
-[2016.09.03-14.23.29:090][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
-[2016.09.03-14.23.29:185][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
-[2016.09.03-14.23.29:364][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
-[2016.09.03-14.23.30:783][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
-[2016.09.03-14.23.31:279][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Lamp_M.uasset"
-[2016.09.03-14.23.31:321][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Lamp_N.uasset"
-[2016.09.03-14.23.31:433][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_MacroVariation.uasset"
-[2016.09.03-14.23.31:538][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
-[2016.09.03-14.23.31:962][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
-[2016.09.03-14.23.32:066][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
-[2016.09.03-14.23.32:105][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
-[2016.09.03-14.23.32:498][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
-[2016.09.03-14.23.32:616][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
-[2016.09.03-14.23.32:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
-[2016.09.03-14.23.32:714][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
-[2016.09.03-14.23.33:084][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
-[2016.09.03-14.23.33:177][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_RockMesh_M.uasset"
-[2016.09.03-14.23.33:240][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_RockMesh_N.uasset"
-[2016.09.03-14.23.33:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
-[2016.09.03-14.23.33:785][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
-[2016.09.03-14.23.33:960][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
-[2016.09.03-14.23.34:157][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
-[2016.09.03-14.23.34:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
-[2016.09.03-14.23.34:389][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
-[2016.09.03-14.23.34:540][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
-[2016.09.03-14.23.34:642][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
-[2016.09.03-14.23.34:658][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Shelf_M.uasset"
-[2016.09.03-14.23.34:745][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Shelf_N.uasset"
-[2016.09.03-14.23.34:760][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
-[2016.09.03-14.23.34:809][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
-[2016.09.03-14.23.34:827][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
-[2016.09.03-14.23.34:849][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Spark_Core.uasset"
-[2016.09.03-14.23.34:862][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Statue_M.uasset"
-[2016.09.03-14.23.34:873][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Statue_N.uasset"
-[2016.09.03-14.23.34:886][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_TableRound_M.uasset"
-[2016.09.03-14.23.35:416][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_TableRound_N.uasset"
-[2016.09.03-14.23.35:435][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
-[2016.09.03-14.23.35:470][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
-[2016.09.03-14.23.35:599][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
-[2016.09.03-14.23.35:669][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
-[2016.09.03-14.23.35:680][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
-[2016.09.03-14.23.35:697][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
-[2016.09.03-14.23.35:741][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Water_M.uasset"
-[2016.09.03-14.23.35:764][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Water_N.uasset"
-[2016.09.03-14.23.35:794][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
-[2016.09.03-14.23.35:834][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
-[2016.09.03-14.23.35:864][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
-[2016.09.03-14.23.35:977][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
-[2016.09.03-14.23.36:068][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
-[2016.09.03-14.23.36:156][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
-[2016.09.03-14.23.36:221][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
-[2016.09.03-14.23.36:857][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
-[2016.09.03-14.23.36:981][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
-[2016.09.03-14.23.37:147][  0]LogRenderer: Reallocating scene render targets to support 256x256 (Frame:2).
-[2016.09.03-14.23.37:215][  0]LogSavePackage: Save=10.09ms
-[2016.09.03-14.23.37:215][  0]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/Floor_400x400420A40E74D3542977F36348A9EC301A2.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Floor_400x400.uasset'
-[2016.09.03-14.23.37:218][  0]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/StarterContent/Architecture/Floor_400x400.uasset
-[2016.09.03-14.23.37:218][  0]LogFeaturePack:Warning: Inserted 1 feature packs
-[2016.09.03-14.23.37:219][  0]Cmd: MAP LOAD FILE="../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.09.03-14.23.37:220][  0]LightingResults: New page: Lighting Build
-[2016.09.03-14.23.37:224][  0]MapCheck: New page: Map Check
-[2016.09.03-14.23.37:224][  0]LightingResults: New page: Lighting Build
-[2016.09.03-14.23.38:481][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.09.03-14.23.38:563][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.09.03-14.23.38:564][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.09.03-14.23.38:659][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 95.618ms to complete.
-[2016.09.03-14.23.38:659][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 1.440
-[2016.09.03-14.23.38:971][  0]LogCollectionManager: Loaded 0 collections in 0.002607 seconds
-[2016.09.03-14.23.39:024][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/Collections/' took 0.01s
-[2016.09.03-14.23.39:024][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/Developers/kille/Collections/' took 0.01s
-[2016.09.03-14.23.39:024][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/Collections/' took 0.01s
-[2016.09.03-14.23.39:024][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
-[2016.09.03-14.23.39:031][  0]LogContentBrowser: Native class hierarchy populated in 0.0074 seconds. Added 2141 classes and 415 folders.
-[2016.09.03-14.23.39:053][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2016.09.03-14.23.39:053][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2016.09.03-14.23.39:055][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0018 seconds. Added 12 classes and 0 folders.
-[2016.09.03-14.23.39:069][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2016.09.03-14.23.40:258][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0009 seconds. Added 0 classes and 0 folders.
-[2016.09.03-14.23.40:288][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0016 seconds. Added 1 classes and 2 folders.
-[2016.09.03-14.23.40:326][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.09.03-14.23.40:345][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.09.03-14.23.40:375][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
-[2016.09.03-14.23.40:376][  0]LogLoad: (Engine Initialization) Total time: 76.39 seconds
-[2016.09.03-14.23.40:376][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.27 seconds
-[2016.09.03-14.23.40:376][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2016.09.03-14.23.40:376][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2016.09.03-14.23.40:386][  0]LogOcInput: OculusInput pre-init called
-[2016.09.03-14.23.40:634][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.09.03-14.23.41:210][  0]LogRenderer: Reallocating scene render targets to support 1236x660 (Frame:3).
-[2016.09.03-14.23.41:273][  2]LogAssetRegistry: Asset discovery search completed in 66.5692 seconds
-[2016.09.03-14.23.41:273][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.09.03-14.23.41:273][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000027 seconds (updated 0 objects)
-[2016.09.03-14.24.07:412][ 64]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 112 classes and 0 folders.
-[2016.09.03-14.24.08:237][ 64]LogTexture:Display: Building textures: TilePatine_N (BC5)
-[2016.09.03-14.24.08:540][ 64]LogTexture:Display: Building textures: TilePatine_D (AutoDXT)
-[2016.09.03-14.25.35:351][770]BlueprintLog: New page: Compile ThirdPersonCharacter
-[2016.09.03-14.25.36:247][819]LogSavePackage: Save=31.09ms
-[2016.09.03-14.25.36:247][819]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/ThirdPersonCharacter308F018443D9855E12CC3D8686E6C0B0.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset'
-[2016.09.03-14.25.36:249][819]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset
-[2016.09.03-14.25.38:090][979]LogSavePackage: Save=309.66ms
-[2016.09.03-14.25.38:090][979]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/ThirdPersonExampleMap366E432D4AC125DCA1580EAA66FD7CEA.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
-[2016.09.03-14.25.38:093][979]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
-[2016.09.03-14.25.38:853][ 51]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.09.03-14.25.38:853][ 51]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.09.03-14.25.38:854][ 51]PIE: New page: PIE session: ThirdPersonExampleMap (Sep 3, 2016, 5:25:38 PM)
-[2016.09.03-14.25.38:854][ 51]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
-[2016.09.03-14.25.38:873][ 51]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019327s)
-[2016.09.03-14.25.38:874][ 51]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
-[2016.09.03-14.25.38:874][ 51]LogPlayLevel: PIE: World Init took: (0.001937s)
-[2016.09.03-14.25.38:875][ 51]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.021755s)
-[2016.09.03-14.25.38:894][ 51]LogInit: XAudio2 using 'Altoparlanti (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2016.09.03-14.25.38:903][ 51]LogInit: FAudioDevice initialized.
-[2016.09.03-14.25.38:953][ 51]LogWorld: Game class is 'ThirdPersonGameMode_C'
-[2016.09.03-14.25.38:958][ 51]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.09.03-16.25.38
-[2016.09.03-14.25.38:959][ 51]LogWorld: Bringing up level for play took: 0.003939
-[2016.09.03-14.25.38:964][ 51]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
-[2016.09.03-14.25.38:964][ 51]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
-[2016.09.03-14.25.38:964][ 51]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2016.09.03-14.25.38:964][ 51]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
-[2016.09.03-14.25.38:965][ 51]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2016.09.03-14.25.38:965][ 51]PIE: Info Play in editor start time for /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.797
-[2016.09.03-14.25.38:965][ 51]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.09.03-14.25.41:055][295]LogBlueprintUserMessages: [ThirdPersonCharacter_167] Sam Fagiano
-[2016.09.03-14.25.41:752][378]LogBlueprintUserMessages: [ThirdPersonCharacter_167] Sam Fagiano
-[2016.09.03-14.25.42:111][421]LogBlueprintUserMessages: [ThirdPersonCharacter_167] Sam Fagiano
-[2016.09.03-14.25.42:293][443]LogBlueprintUserMessages: [ThirdPersonCharacter_167] Sam Fagiano
-[2016.09.03-14.25.42:510][469]LogBlueprintUserMessages: [ThirdPersonCharacter_167] Sam Fagiano
-[2016.09.03-14.25.42:794][503]LogBlueprintUserMessages: [ThirdPersonCharacter_167] Sam Fagiano
-[2016.09.03-14.25.42:969][524]LogBlueprintUserMessages: [ThirdPersonCharacter_167] Sam Fagiano
-[2016.09.03-14.25.43:428][579]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.09.03-14.25.43:471][579]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
-[2016.09.03-14.25.48:837][182]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.09.03-14.25.49:010][183]Cmd: QUIT_EDITOR
-[2016.09.03-14.25.49:606][183]LogExit: Preparing to exit.
-[2016.09.03-14.25.50:927][183]LogDirectoryWatcher: A directory notification for 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/' was aborted.
-[2016.09.03-14.25.50:976][183]LogExit: Editor shut down
-[2016.09.03-14.25.50:976][183]LogExit: Transaction tracking system shut down
-[2016.09.03-14.25.51:121][183]LogObj: Freed 0b from 0 cluster array pools.
-[2016.09.03-14.25.51:121][183]LogExit: Object subsystem successfully closed.
-[2016.09.03-14.25.51:141][183]LogD3D11RHI: Shutdown
-[2016.09.03-14.25.51:141][183]LogD3D11RHI: CleanupD3DDevice
-[2016.09.03-14.25.51:236][183]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.09.03-14.25.51:260][183]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (237)
-[2016.09.03-14.25.51:260][183]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (236)
-[2016.09.03-14.25.51:260][183]LogModuleManager: Shutting down and abandoning module BlueprintGraph (235)
-[2016.09.03-14.25.51:260][183]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (234)
-[2016.09.03-14.25.51:260][183]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (233)
-[2016.09.03-14.25.51:260][183]LogModuleManager: Shutting down and abandoning module CrashTracker (232)
-[2016.09.03-14.25.51:260][183]LogModuleManager: Shutting down and abandoning module SceneOutliner (231)
-[2016.09.03-14.25.51:260][183]LogModuleManager: Shutting down and abandoning module WidgetCarousel (230)
-[2016.09.03-14.25.51:260][183]LogModuleManager: Shutting down and abandoning module AddContentDialog (229)
-[2016.09.03-14.25.51:260][183]LogDirectoryWatcher: A directory notification for 'C:/Program Files (x86)/Epic Games/4.13/FeaturePacks/' was aborted.
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module GameplayTags (228)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module EditorWidgets (227)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module CollectionManager (226)
-[2016.09.03-14.25.51:261][183]LogDirectoryWatcher: A directory notification for 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/Collections/' was aborted.
-[2016.09.03-14.25.51:261][183]LogDirectoryWatcher: A directory notification for 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/Developers/kille/Collections/' was aborted.
-[2016.09.03-14.25.51:261][183]LogDirectoryWatcher: A directory notification for 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/Collections/' was aborted.
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module StatsViewer (225)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module FoliageEdit (224)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module LandscapeEditor (223)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (222)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module ActorPickerMode (221)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module GeometryMode (220)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module TextureAlignMode (219)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module BspMode (218)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module HardwareSurvey (217)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (216)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module SequenceRecorder (215)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module AutomationWorker (214)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (213)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module PlacementMode (212)
-[2016.09.03-14.25.51:261][183]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (211)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (210)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (209)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (208)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (207)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module Media (206)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (205)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (204)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module CharacterAI (203)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module SmartSnapping (202)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module SessionServices (201)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module ViewportSnapping (200)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module ViewportInteraction (199)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module LogVisualizer (198)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (197)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module IntroTutorials (196)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (195)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (194)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (193)
-[2016.09.03-14.25.51:262][183]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (192)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (191)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (190)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (189)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module NiagaraEditor (188)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module MergeActors (187)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module SizeMap (186)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module TreeMap (185)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module ReferenceViewer (184)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module LocalizationService (183)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (182)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module HardwareTargeting (181)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (180)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module UndoHistory (179)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module UserFeedback (178)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module XmlParser (177)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module Blutility (176)
-[2016.09.03-14.25.51:574][183]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (175)
-[2016.09.03-14.25.51:575][183]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (174)
-[2016.09.03-14.25.51:575][183]LogModuleManager: Shutting down and abandoning module InputBindingEditor (173)
-[2016.09.03-14.25.51:575][183]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (172)
-[2016.09.03-14.25.51:575][183]LogModuleManager: Shutting down and abandoning module SettingsEditor (171)
-[2016.09.03-14.25.51:575][183]LogModuleManager: Shutting down and abandoning module ProjectLauncher (170)
-[2016.09.03-14.25.51:575][183]LogModuleManager: Shutting down and abandoning module SessionFrontend (169)
-[2016.09.03-14.25.51:575][183]LogModuleManager: Shutting down and abandoning module ProfilerClient (168)
-[2016.09.03-14.25.51:575][183]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (167)
-[2016.09.03-14.25.51:575][183]LogModuleManager: Shutting down and abandoning module DeviceManager (166)
-[2016.09.03-14.25.51:618][183]LogModuleManager: Shutting down and abandoning module AutomationController (165)
-[2016.09.03-14.25.51:618][183]LogModuleManager: Shutting down and abandoning module AutomationWindow (164)
-[2016.09.03-14.25.51:618][183]LogModuleManager: Shutting down and abandoning module Layers (163)
-[2016.09.03-14.25.51:618][183]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (162)
-[2016.09.03-14.25.51:618][183]LogModuleManager: Shutting down and abandoning module DetailCustomizations (161)
-[2016.09.03-14.25.51:618][183]LogModuleManager: Shutting down and abandoning module PackagesDialog (160)
-[2016.09.03-14.25.51:618][183]LogModuleManager: Shutting down and abandoning module AnimGraph (159)
-[2016.09.03-14.25.51:618][183]LogModuleManager: Shutting down and abandoning module Persona (158)
-[2016.09.03-14.25.51:618][183]LogModuleManager: Shutting down and abandoning module Kismet (157)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module GraphEditor (156)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module ClassViewer (155)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module Toolbox (154)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module ModuleUI (153)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module MovieSceneTools (152)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module OutputLog (151)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module GammaUI (150)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module Documentation (149)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module Niagara (148)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (147)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module AnalyticsET (146)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module PortalServices (145)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module PortalRpc (144)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module MessagingRpc (143)
-[2016.09.03-14.25.51:623][183]LogModuleManager: Shutting down and abandoning module GameplayDebugger (142)
-[2016.09.03-14.25.51:624][183]LogModuleManager: Shutting down and abandoning module AITestSuite (141)
-[2016.09.03-14.25.51:624][183]LogModuleManager: Shutting down and abandoning module AIModule (140)
-[2016.09.03-14.25.51:624][183]LogModuleManager: Shutting down and abandoning module ProfilerService (139)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module TaskGraph (138)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module SlateRemote (137)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module SteamVRController (136)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module SteamVR (135)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (134)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (133)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module OculusLibrary (132)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module OculusInput (131)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (130)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module CableComponent (129)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (128)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (126)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module HTML5Networking (125)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (124)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module GeometryCache (123)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module AlembicLibrary (122)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module AlembicImporter (121)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module SuperSearch (120)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (119)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (118)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module PluginBrowser (117)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (116)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module EpicSurvey (115)
-[2016.09.03-14.25.51:824][183]LogModuleManager: Shutting down and abandoning module DesktopPlatform (114)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (113)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module UObjectPlugin (112)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (111)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (110)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module SourceControl (109)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module GitSourceControl (108)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (107)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (106)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (105)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module MeshPaint (104)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module FbxAutomationBuilderModule (103)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (102)
-[2016.09.03-14.25.51:825][183]LogModuleManager: Shutting down and abandoning module HotReload (101)
-[2016.09.03-14.25.51:826][183]LogModuleManager: Shutting down and abandoning module MainFrame (100)
-[2016.09.03-14.25.51:826][183]LogModuleManager: Shutting down and abandoning module LevelEditor (99)
-[2016.09.03-14.25.51:828][183]LogModuleManager: Shutting down and abandoning module ContentBrowser (98)
-[2016.09.03-14.25.51:829][183]LogModuleManager: Shutting down and abandoning module Paper2DEditor (97)
-[2016.09.03-14.25.51:830][183]LogModuleManager: Shutting down and abandoning module UdpMessaging (96)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module TcpMessaging (95)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (94)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module Paper2D (93)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (92)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module WmfMedia (91)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module MediaAssets (90)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (89)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (88)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module VREditor (87)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (86)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module PropertyEditor (85)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (84)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module FunctionalTesting (83)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (82)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module Sequencer (81)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (80)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module MessageLog (79)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module AssetTools (78)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module UMGEditor (77)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module UMG (76)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module SlateReflector (75)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module Slate (74)
-[2016.09.03-14.25.51:931][183]LogModuleManager: Shutting down and abandoning module EditorStyle (73)
-[2016.09.03-14.25.51:936][183]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (72)
-[2016.09.03-14.25.51:936][183]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (71)
-[2016.09.03-14.25.51:936][183]LogModuleManager: Shutting down and abandoning module XAudio2 (70)
-[2016.09.03-14.25.51:936][183]LogModuleManager: Shutting down and abandoning module Networking (68)
-[2016.09.03-14.25.51:937][183]LogModuleManager: Shutting down and abandoning module Core (67)
-[2016.09.03-14.25.51:937][183]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (66)
-[2016.09.03-14.25.51:937][183]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2016.09.03-14.25.51:937][183]LogDirectoryWatcher: A directory notification for '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/' was aborted.
-[2016.09.03-14.25.51:937][183]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2016.09.03-14.25.51:937][183]LogModuleManager: Shutting down and abandoning module AssetRegistry (65)
-[2016.09.03-14.25.52:100][183]LogModuleManager: Shutting down and abandoning module KismetCompiler (64)
-[2016.09.03-14.25.52:100][183]LogModuleManager: Shutting down and abandoning module PhysXFormats (63)
-[2016.09.03-14.25.52:100][183]LogModuleManager: Shutting down and abandoning module MeshUtilities (62)
-[2016.09.03-14.25.52:100][183]LogModuleManager: Shutting down and abandoning module DerivedDataCache (61)
-[2016.09.03-14.25.52:120][183]LogDerivedDataCache: Shutdown
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (60)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (59)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (58)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (57)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (56)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (55)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (54)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (53)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module ImageWrapper (52)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (51)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (50)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (49)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (48)
-[2016.09.03-14.25.52:120][183]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (47)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (46)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (45)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (44)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (43)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (42)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module Messaging (41)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (40)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (39)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (38)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (37)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (36)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (35)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (34)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (33)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (32)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (31)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (30)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (29)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (28)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (27)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module InputCore (24)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module Settings (23)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module OculusRift (22)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module GearVR (21)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (20)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (19)
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
-[2016.09.03-14.25.52:121][183]LogOnline:Display: Unloading online subsystem: NULL
-[2016.09.03-14.25.52:121][183]LogModuleManager: Shutting down and abandoning module HTTP (16)
-[2016.09.03-14.25.52:121][183]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2016.09.03-14.25.52:121][183]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B3BA86367-455C-3A61-1FE6-59B9A73E410A%7D&AppID=UEEditor.Rocket.Release&AppVersion=%2B%2BUE4%2BRelease-4.13-CL-3106830&UserID=1ab368e04be12a9e131cb28dd0963cb5%7C40a1073a76d24f79b265379f09a1a9c6%7C67e3a735-45c9-4bff-8859-9e7e70a23c20&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2016.09.03-14.25.52:137][183]LogModuleManager: Shutting down and abandoning module XMPP (15)
-[2016.09.03-14.25.52:137][183]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.09.03-14.25.52:137][183]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.09.03-14.25.52:137][183]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.09.03-14.25.52:137][183]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.09.03-14.25.52:141][183]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.09.03-14.25.52:141][183]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.09.03-14.25.52:141][183]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.09.03-14.25.52:141][183]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.09.03-14.25.52:141][183]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.09.03-14.25.52:141][183]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.09.03-14.25.52:141][183]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.09.03-14.25.52:141][183]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.09.03-14.25.52:142][183]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.09.03-14.25.52:142][183]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.09.03-14.25.52:146][183]LogExit: Exiting.
-[2016.09.03-14.25.52:169][183]Log file closed, 09/03/16 16:25:52
+[2016.09.03-15.39.59:029][  0]LogInit: Selected Device Profile: [Windows]
+[2016.09.03-15.39.59:029][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.09.03-15.39.59:037][  0]LogInit: Computer: DESKTOP-LJMHOM9
+[2016.09.03-15.39.59:037][  0]LogInit: User: kille
+[2016.09.03-15.39.59:037][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.09.03-15.39.59:037][  0]LogInit: High frequency timer resolution =3.312642 MHz
+[2016.09.03-15.39.59:037][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.09.03-15.39.59:037][  0]LogMemory: Platform Memory Stats for Windows
+[2016.09.03-15.39.59:037][  0]LogMemory: Process Physical Memory: 255.35 MB used, 255.35 MB peak
+[2016.09.03-15.39.59:037][  0]LogMemory: Process Virtual Memory: 259.77 MB used, 259.77 MB peak
+[2016.09.03-15.39.59:037][  0]LogMemory: Physical Memory: 4624.98 MB used, 16272.00 MB total
+[2016.09.03-15.39.59:037][  0]LogMemory: Virtual Memory: 623.38 MB used, 134217728.00 MB total
+[2016.09.03-15.39.59:070][  0]LogTextLocalizationManager: No translations for ('it-IT') exist, falling back to 'en' for localization and internationalization data.
+[2016.09.03-15.39.59:696][  0]LogD3D11RHI: D3D11 adapters:
+[2016.09.03-15.39.59:720][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2016.09.03-15.39.59:720][  0]LogD3D11RHI:       6100/0/8135 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.09.03-15.39.59:727][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2016.09.03-15.39.59:727][  0]LogD3D11RHI:       112/0/8135 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2016.09.03-15.39.59:728][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.09.03-15.39.59:728][  0]LogD3D11RHI:       0/0/8135 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.09.03-15.39.59:728][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.09.03-15.39.59:732][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.09.03-15.39.59:732][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2016.09.03-15.39.59:732][  0]LogWindows: EnumDisplayDevices:
+[2016.09.03-15.39.59:732][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2016.09.03-15.39.59:732][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2016.09.03-15.39.59:732][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2016.09.03-15.39.59:733][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2016.09.03-15.39.59:733][  0]LogWindows:    4. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2016.09.03-15.39.59:733][  0]LogWindows:    5. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2016.09.03-15.39.59:733][  0]LogWindows:    6. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2016.09.03-15.39.59:733][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2016.09.03-15.39.59:733][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2016.09.03-15.39.59:733][  0]LogD3D11RHI:   Driver Version: 372.54 (internal:21.21.13.7254, unified:372.54)
+[2016.09.03-15.39.59:733][  0]LogD3D11RHI:      Driver Date: 8-11-2016
+[2016.09.03-15.39.59:733][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.09.03-15.39.59:745][  0]LogD3D11RHI: Async texture creation enabled
+[2016.09.03-15.39.59:754][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.09.03-15.39.59:754][  0]LogShaderCompilers: Guid format shader working directory is -34 characters bigger than the processId version (../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Intermediate/Shaders/WorkingDirectory/9448/).
+[2016.09.03-15.39.59:754][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/kille/AppData/Local/Temp/UnrealShaderWorkingDir/14B931BC48F84E8593D851BDE61628BA/'.
+[2016.09.03-15.39.59:754][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.09.03-15.40.02:631][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.09.03-15.40.02:641][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.09.03-15.40.02:650][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.09.03-15.40.02:660][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.09.03-15.40.02:670][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.09.03-15.40.02:678][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.09.03-15.40.02:685][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.09.03-15.40.02:692][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.09.03-15.40.02:699][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.09.03-15.40.02:707][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.09.03-15.40.02:714][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.09.03-15.40.02:730][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.09.03-15.40.02:730][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.09.03-15.40.02:731][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.09.03-15.40.02:752][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.09.03-15.40.02:759][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.09.03-15.40.02:766][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2016.09.03-15.40.02:773][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.09.03-15.40.02:780][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.09.03-15.40.02:788][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.09.03-15.40.02:788][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.09.03-15.40.02:887][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.09.03-15.40.02:948][  0]LogDerivedDataCache: Loaded boot cache 0.06s 62MB C:/Users/kille/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
+[2016.09.03-15.40.02:948][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/kille/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc
+[2016.09.03-15.40.02:948][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.09.03-15.40.02:948][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.09.03-15.40.02:948][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.09.03-15.40.02:948][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.09.03-15.40.02:964][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.09.03-15.40.02:976][  0]LogDerivedDataCache: Using Local data cache path C:/Users/kille/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.09.03-15.40.03:170][  0]LogInit: Selected Device Profile: [Windows]
+[2016.09.03-15.40.03:171][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.09.03-15.40.03:264][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.09.03-15.40.03:264][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.09.03-15.40.03:264][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.09.03-15.40.03:332][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.09.03-15.40.03:587][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3106830, ProjectName: myue4projecttest, ProjectVersion: , EngineNetworkVersion: 1, GameNetworkVersion: 0, NetworkChecksum: 2637872481
+[2016.09.03-15.40.03:624][  0]LogAssetRegistry: FAssetRegistry took 0.0225 seconds to start up
+[2016.09.03-15.40.03:638][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.011144 seconds
+[2016.09.03-15.40.03:644][  0]LogUObjectArray: 29777 objects as part of root set at end of initial load.
+[2016.09.03-15.40.03:644][  0]LogUObjectAllocator: 6124696 out of 0 bytes used by permanent object pool.
+[2016.09.03-15.40.03:644][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.09.03-15.40.03:654][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.09.03-15.40.03:871][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.09.03-15.40.03:871][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.09.03-15.40.04:679][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.09.03-15.40.04:949][  0]SourceControl: Info Source control is disabled
+[2016.09.03-15.40.04:950][  0]SourceControl: Info Source control is disabled
+[2016.09.03-15.40.04:966][  0]SourceControl: Info Source control is disabled
+[2016.09.03-15.40.04:979][  0]SourceControl: Info Source control is disabled
+[2016.09.03-15.40.05:350][  0]LogEngine: Initializing Engine...
+[2016.09.03-15.40.05:350][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2016.09.03-15.40.05:485][  0]LogAIModule: Creating AISystem for world Untitled
+[2016.09.03-15.40.05:498][  0]LogInit: XAudio2 using 'Altoparlanti (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.03-15.40.05:510][  0]LogInit: FAudioDevice initialized.
+[2016.09.03-15.40.05:541][  0]LogDerivedDataCache: Saved boot cache 0.03s 62MB C:/Users/kille/AppData/Local/UnrealEngine/4.13/DerivedDataCache/Boot.ddc.
+[2016.09.03-15.40.05:549][  0]LogInit: Texture streaming: Enabled
+[2016.09.03-15.40.05:578][  0]LogInit: Transaction tracking system initialized
+[2016.09.03-15.40.05:607][  0]BlueprintLog: New page: Editor Load
+[2016.09.03-15.40.05:710][  0]LocalizationService: Info Localization service is disabled
+[2016.09.03-15.40.05:805][  0]LogConsoleResponse:Display: 
+[2016.09.03-15.40.05:915][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2016.09.03-15.40.05:915][  0]LogCook:Display: Mobile HDR setting 1
+[2016.09.03-15.40.05:994][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/' took 0.01s
+[2016.09.03-15.40.06:128][  0]SourceControl: Info Source control is disabled
+[2016.09.03-15.40.06:128][  0]Cmd: MAP LOAD FILE="../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.09.03-15.40.06:128][  0]LightingResults: New page: Lighting Build
+[2016.09.03-15.40.06:132][  0]MapCheck: New page: Map Check
+[2016.09.03-15.40.06:132][  0]LightingResults: New page: Lighting Build
+[2016.09.03-15.40.06:466][  0]LogBlueprint:Warning: Node '/Game/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter:EventGraph.Culo_1' missing NodeGuid, this can cause deterministic cooking issues please resave package.
+[2016.09.03-15.40.06:529][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.09.03-15.40.06:537][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.09.03-15.40.06:538][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.09.03-15.40.06:622][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 84.299ms to complete.
+[2016.09.03-15.40.06:622][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.494
+[2016.09.03-15.40.06:737][  0]LogCollectionManager: Loaded 0 collections in 0.003281 seconds
+[2016.09.03-15.40.06:778][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/Collections/' took 0.01s
+[2016.09.03-15.40.06:778][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/Developers/kille/Collections/' took 0.01s
+[2016.09.03-15.40.06:778][  0]LogFileCache: Scanning file cache for directory 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/Collections/' took 0.01s
+[2016.09.03-15.40.06:778][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.09.03-15.40.06:786][  0]LogContentBrowser: Native class hierarchy populated in 0.0076 seconds. Added 2141 classes and 415 folders.
+[2016.09.03-15.40.06:790][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.09.03-15.40.06:790][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.09.03-15.40.06:791][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 12 classes and 0 folders.
+[2016.09.03-15.40.06:798][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2016.09.03-15.40.06:856][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2016.09.03-15.40.06:862][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.09.03-15.40.06:876][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.09.03-15.40.06:881][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.09.03-15.40.06:908][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.09.03-15.40.06:909][  0]LogLoad: (Engine Initialization) Total time: 8.89 seconds
+[2016.09.03-15.40.06:909][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.11 seconds
+[2016.09.03-15.40.06:909][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.09.03-15.40.06:909][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.09.03-15.40.06:917][  0]LogOcInput: OculusInput pre-init called
+[2016.09.03-15.40.06:936][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.09.03-15.40.07:075][  0]LogRenderer: Reallocating scene render targets to support 1216x608 (Frame:2).
+[2016.09.03-15.40.07:149][  1]LogAssetRegistry: Asset discovery search completed in 3.5479 seconds
+[2016.09.03-15.40.07:149][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.09.03-15.40.07:149][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000020 seconds (updated 0 objects)
+[2016.09.03-15.40.15:924][ 16]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 112 classes and 0 folders.
+[2016.09.03-15.40.23:842][875]LogRenderer: Reallocating scene render targets to support 1224x608 (Frame:2297).
+[2016.09.03-15.40.23:881][876]LogRenderer: Reallocating scene render targets to support 1228x608 (Frame:2299).
+[2016.09.03-15.40.23:922][877]LogRenderer: Reallocating scene render targets to support 1232x608 (Frame:2301).
+[2016.09.03-15.40.23:963][878]LogRenderer: Reallocating scene render targets to support 1236x608 (Frame:2303).
+[2016.09.03-15.40.24:005][879]LogRenderer: Reallocating scene render targets to support 1240x608 (Frame:2305).
+[2016.09.03-15.40.24:044][880]LogRenderer: Reallocating scene render targets to support 1244x608 (Frame:2307).
+[2016.09.03-15.40.24:083][881]LogRenderer: Reallocating scene render targets to support 1248x608 (Frame:2309).
+[2016.09.03-15.40.24:124][882]LogRenderer: Reallocating scene render targets to support 1256x608 (Frame:2311).
+[2016.09.03-15.40.24:166][883]LogRenderer: Reallocating scene render targets to support 1280x608 (Frame:2313).
+[2016.09.03-15.40.24:206][884]LogRenderer: Reallocating scene render targets to support 1308x608 (Frame:2315).
+[2016.09.03-15.40.55:428][397]LogSavePackage: Save=40.28ms
+[2016.09.03-15.40.55:428][397]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/ThirdPersonCharacterDDAB522C4B288A879EDBF58991B05E89.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset'
+[2016.09.03-15.40.55:430][397]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset
+[2016.09.03-15.42.09:734][804]BlueprintLog: New page: Compile ThirdPersonCharacter
+[2016.09.03-15.42.10:402][857]LogSavePackage: Save=36.48ms
+[2016.09.03-15.42.10:402][857]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/ThirdPersonCharacter8BB20FCA4B9DA2451979AD8C1B72B4BC.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset'
+[2016.09.03-15.42.10:405][857]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset
+[2016.09.03-15.42.53:819][525]BlueprintLog: New page: Compile ThirdPersonExampleMap
+[2016.09.03-15.42.57:049][855]LogSavePackage: Save=247.64ms
+[2016.09.03-15.42.57:049][855]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/ThirdPersonExampleMapFE33531B4F2DEA5BE27AC4879CCE3D75.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.09.03-15.42.57:052][855]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.09.03-15.42.57:065][855]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.380
+[2016.09.03-15.43.44:063][ 56]BlueprintLog: New page: Compile ThirdPersonCharacter
+[2016.09.03-15.43.44:718][103]LogSavePackage: Save=35.78ms
+[2016.09.03-15.43.44:718][103]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/ThirdPersonCharacter5BD2431A4BA91CE588177BAA04770843.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset'
+[2016.09.03-15.43.44:721][103]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset
+[2016.09.03-15.43.54:217][ 95]LogSavePackage: Save=28.84ms
+[2016.09.03-15.43.54:217][ 95]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/ThirdPersonCharacter07902D234065DCB47F5BC3A91C94506A.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset'
+[2016.09.03-15.43.54:219][ 95]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Blueprints/ThirdPersonCharacter.uasset
+[2016.09.03-15.43.57:536][408]LogSavePackage: Save=243.52ms
+[2016.09.03-15.43.57:537][408]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/ThirdPersonExampleMapC84A9C09476DDBCDDEDB269239D5C0F9.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.09.03-15.43.57:540][408]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.09.03-15.43.57:552][408]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.366
+[2016.09.03-15.44.04:306][188]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.09.03-15.44.12:683][133]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.09.03-15.44.13:282][200]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.09.03-15.44.25:136][449]LogSavePackage: Save=245.74ms
+[2016.09.03-15.44.25:136][449]LogSavePackage: Moving '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/ThirdPersonExampleMapD4315C4C499AB1990CFB509E2781FC97.tmp' to '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2016.09.03-15.44.25:139][449]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2016.09.03-15.44.25:151][449]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 0.365
+[2016.09.03-15.44.36:866][778]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.09.03-15.44.37:036][779]Cmd: QUIT_EDITOR
+[2016.09.03-15.44.37:082][779]LogExit: Preparing to exit.
+[2016.09.03-15.44.37:876][779]LogDirectoryWatcher: A directory notification for 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/' was aborted.
+[2016.09.03-15.44.37:905][779]LogExit: Editor shut down
+[2016.09.03-15.44.37:905][779]LogExit: Transaction tracking system shut down
+[2016.09.03-15.44.38:044][779]LogObj: Freed 0b from 0 cluster array pools.
+[2016.09.03-15.44.38:044][779]LogExit: Object subsystem successfully closed.
+[2016.09.03-15.44.38:064][779]LogD3D11RHI: Shutdown
+[2016.09.03-15.44.38:064][779]LogD3D11RHI: CleanupD3DDevice
+[2016.09.03-15.44.38:146][779]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.09.03-15.44.38:169][779]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (236)
+[2016.09.03-15.44.38:169][779]LogModuleManager: Shutting down and abandoning module BlueprintGraph (235)
+[2016.09.03-15.44.38:169][779]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (234)
+[2016.09.03-15.44.38:169][779]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (233)
+[2016.09.03-15.44.38:169][779]LogModuleManager: Shutting down and abandoning module CrashTracker (232)
+[2016.09.03-15.44.38:169][779]LogModuleManager: Shutting down and abandoning module SceneOutliner (231)
+[2016.09.03-15.44.38:169][779]LogModuleManager: Shutting down and abandoning module WidgetCarousel (230)
+[2016.09.03-15.44.38:169][779]LogModuleManager: Shutting down and abandoning module AddContentDialog (229)
+[2016.09.03-15.44.38:169][779]LogDirectoryWatcher: A directory notification for 'C:/Program Files (x86)/Epic Games/4.13/FeaturePacks/' was aborted.
+[2016.09.03-15.44.38:173][779]LogModuleManager: Shutting down and abandoning module GameplayTags (228)
+[2016.09.03-15.44.38:173][779]LogModuleManager: Shutting down and abandoning module EditorWidgets (227)
+[2016.09.03-15.44.38:173][779]LogModuleManager: Shutting down and abandoning module CollectionManager (226)
+[2016.09.03-15.44.38:173][779]LogDirectoryWatcher: A directory notification for 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/Collections/' was aborted.
+[2016.09.03-15.44.38:173][779]LogDirectoryWatcher: A directory notification for 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/Developers/kille/Collections/' was aborted.
+[2016.09.03-15.44.38:173][779]LogDirectoryWatcher: A directory notification for 'C:/Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Saved/Collections/' was aborted.
+[2016.09.03-15.44.38:173][779]LogModuleManager: Shutting down and abandoning module StatsViewer (225)
+[2016.09.03-15.44.38:173][779]LogModuleManager: Shutting down and abandoning module FoliageEdit (224)
+[2016.09.03-15.44.38:173][779]LogModuleManager: Shutting down and abandoning module LandscapeEditor (223)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (222)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module ActorPickerMode (221)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module GeometryMode (220)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module TextureAlignMode (219)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module BspMode (218)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module HardwareSurvey (217)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (216)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module SequenceRecorder (215)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module AutomationWorker (214)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (213)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module PlacementMode (212)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (211)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (210)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (209)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (208)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (207)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module Media (206)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (205)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (204)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module CharacterAI (203)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module SmartSnapping (202)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module SessionServices (201)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module ViewportSnapping (200)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module ViewportInteraction (199)
+[2016.09.03-15.44.38:174][779]LogModuleManager: Shutting down and abandoning module LogVisualizer (198)
+[2016.09.03-15.44.38:175][779]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (197)
+[2016.09.03-15.44.38:175][779]LogModuleManager: Shutting down and abandoning module IntroTutorials (196)
+[2016.09.03-15.44.38:175][779]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (195)
+[2016.09.03-15.44.38:175][779]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (194)
+[2016.09.03-15.44.38:175][779]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (193)
+[2016.09.03-15.44.38:175][779]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (192)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (191)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (190)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (189)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module NiagaraEditor (188)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module MergeActors (187)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module SizeMap (186)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module TreeMap (185)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module ReferenceViewer (184)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module LocalizationService (183)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (182)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module HardwareTargeting (181)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (180)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module UndoHistory (179)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module UserFeedback (178)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module XmlParser (177)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module Blutility (176)
+[2016.09.03-15.44.38:842][779]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (175)
+[2016.09.03-15.44.38:843][779]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (174)
+[2016.09.03-15.44.38:843][779]LogModuleManager: Shutting down and abandoning module InputBindingEditor (173)
+[2016.09.03-15.44.38:843][779]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (172)
+[2016.09.03-15.44.38:843][779]LogModuleManager: Shutting down and abandoning module SettingsEditor (171)
+[2016.09.03-15.44.38:843][779]LogModuleManager: Shutting down and abandoning module ProjectLauncher (170)
+[2016.09.03-15.44.38:843][779]LogModuleManager: Shutting down and abandoning module SessionFrontend (169)
+[2016.09.03-15.44.38:843][779]LogModuleManager: Shutting down and abandoning module ProfilerClient (168)
+[2016.09.03-15.44.38:843][779]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (167)
+[2016.09.03-15.44.38:843][779]LogModuleManager: Shutting down and abandoning module DeviceManager (166)
+[2016.09.03-15.44.38:885][779]LogModuleManager: Shutting down and abandoning module AutomationController (165)
+[2016.09.03-15.44.38:885][779]LogModuleManager: Shutting down and abandoning module AutomationWindow (164)
+[2016.09.03-15.44.38:885][779]LogModuleManager: Shutting down and abandoning module Layers (163)
+[2016.09.03-15.44.38:885][779]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (162)
+[2016.09.03-15.44.38:885][779]LogModuleManager: Shutting down and abandoning module DetailCustomizations (161)
+[2016.09.03-15.44.38:885][779]LogModuleManager: Shutting down and abandoning module PackagesDialog (160)
+[2016.09.03-15.44.38:885][779]LogModuleManager: Shutting down and abandoning module AnimGraph (159)
+[2016.09.03-15.44.38:885][779]LogModuleManager: Shutting down and abandoning module Persona (158)
+[2016.09.03-15.44.38:885][779]LogModuleManager: Shutting down and abandoning module Kismet (157)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module GraphEditor (156)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module ClassViewer (155)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module Toolbox (154)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module ModuleUI (153)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module MovieSceneTools (152)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module OutputLog (151)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module GammaUI (150)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module Documentation (149)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module Niagara (148)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (147)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module AnalyticsET (146)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module PortalServices (145)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module PortalRpc (144)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module MessagingRpc (143)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module GameplayDebugger (142)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module AITestSuite (141)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module AIModule (140)
+[2016.09.03-15.44.38:892][779]LogModuleManager: Shutting down and abandoning module ProfilerService (139)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module TaskGraph (138)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module SlateRemote (137)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module SteamVRController (136)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module SteamVR (135)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (134)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (133)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module OculusLibrary (132)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module OculusInput (131)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (130)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module CableComponent (129)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (128)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (126)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module HTML5Networking (125)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (124)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module GeometryCache (123)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module AlembicLibrary (122)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module AlembicImporter (121)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module SuperSearch (120)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (119)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (118)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module PluginBrowser (117)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (116)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module EpicSurvey (115)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module DesktopPlatform (114)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (113)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module UObjectPlugin (112)
+[2016.09.03-15.44.39:066][779]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (111)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (110)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module SourceControl (109)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module GitSourceControl (108)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (107)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (106)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (105)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module MeshPaint (104)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module FbxAutomationBuilderModule (103)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (102)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module HotReload (101)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module MainFrame (100)
+[2016.09.03-15.44.39:067][779]LogModuleManager: Shutting down and abandoning module LevelEditor (99)
+[2016.09.03-15.44.39:068][779]LogModuleManager: Shutting down and abandoning module ContentBrowser (98)
+[2016.09.03-15.44.39:069][779]LogModuleManager: Shutting down and abandoning module Paper2DEditor (97)
+[2016.09.03-15.44.39:069][779]LogModuleManager: Shutting down and abandoning module UdpMessaging (96)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module TcpMessaging (95)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (94)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module Paper2D (93)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (92)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module WmfMedia (91)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module MediaAssets (90)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (89)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (88)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module VREditor (87)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (86)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module PropertyEditor (85)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (84)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module FunctionalTesting (83)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (82)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module Sequencer (81)
+[2016.09.03-15.44.39:169][779]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (80)
+[2016.09.03-15.44.39:170][779]LogModuleManager: Shutting down and abandoning module MessageLog (79)
+[2016.09.03-15.44.39:170][779]LogModuleManager: Shutting down and abandoning module AssetTools (78)
+[2016.09.03-15.44.39:170][779]LogModuleManager: Shutting down and abandoning module UMGEditor (77)
+[2016.09.03-15.44.39:170][779]LogModuleManager: Shutting down and abandoning module UMG (76)
+[2016.09.03-15.44.39:170][779]LogModuleManager: Shutting down and abandoning module SlateReflector (75)
+[2016.09.03-15.44.39:170][779]LogModuleManager: Shutting down and abandoning module Slate (74)
+[2016.09.03-15.44.39:170][779]LogModuleManager: Shutting down and abandoning module EditorStyle (73)
+[2016.09.03-15.44.39:172][779]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (72)
+[2016.09.03-15.44.39:172][779]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (71)
+[2016.09.03-15.44.39:172][779]LogModuleManager: Shutting down and abandoning module XAudio2 (70)
+[2016.09.03-15.44.39:172][779]LogModuleManager: Shutting down and abandoning module Networking (68)
+[2016.09.03-15.44.39:172][779]LogModuleManager: Shutting down and abandoning module Core (67)
+[2016.09.03-15.44.39:172][779]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (66)
+[2016.09.03-15.44.39:172][779]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2016.09.03-15.44.39:172][779]LogDirectoryWatcher: A directory notification for '../../../../../../Users/kille/Documents/GitHub/MyUe4ProjectTest/MyUe4ProjectTest/Content/' was aborted.
+[2016.09.03-15.44.39:172][779]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2016.09.03-15.44.39:172][779]LogModuleManager: Shutting down and abandoning module AssetRegistry (65)
+[2016.09.03-15.44.39:281][779]LogModuleManager: Shutting down and abandoning module KismetCompiler (64)
+[2016.09.03-15.44.39:281][779]LogModuleManager: Shutting down and abandoning module PhysXFormats (63)
+[2016.09.03-15.44.39:281][779]LogModuleManager: Shutting down and abandoning module MeshUtilities (62)
+[2016.09.03-15.44.39:281][779]LogModuleManager: Shutting down and abandoning module DerivedDataCache (61)
+[2016.09.03-15.44.39:286][779]LogDerivedDataCache: Shutdown
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (60)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (59)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (58)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (57)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (56)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (55)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (54)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (53)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module ImageWrapper (52)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (51)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (50)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (49)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (48)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (47)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (46)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (45)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (44)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (43)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (42)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module Messaging (41)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (40)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (39)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (38)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (37)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (36)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (35)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (34)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (33)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (32)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (31)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (30)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (29)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (28)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (27)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (26)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module TargetPlatform (25)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module InputCore (24)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module Settings (23)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module OculusRift (22)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module GearVR (21)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (20)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (19)
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (17)
+[2016.09.03-15.44.39:286][779]LogOnline:Display: Unloading online subsystem: NULL
+[2016.09.03-15.44.39:286][779]LogModuleManager: Shutting down and abandoning module HTTP (16)
+[2016.09.03-15.44.39:286][779]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2016.09.03-15.44.39:286][779]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B54B1E6A3-49CB-6C7A-7207-5DB0BEEC892A%7D&AppID=UEEditor.Rocket.Release&AppVersion=%2B%2BUE4%2BRelease-4.13-CL-3106830&UserID=1ab368e04be12a9e131cb28dd0963cb5%7C40a1073a76d24f79b265379f09a1a9c6%7C67e3a735-45c9-4bff-8859-9e7e70a23c20&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2016.09.03-15.44.39:291][779]LogModuleManager: Shutting down and abandoning module XMPP (15)
+[2016.09.03-15.44.39:291][779]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.09.03-15.44.39:291][779]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.09.03-15.44.39:291][779]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.09.03-15.44.39:292][779]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.09.03-15.44.39:294][779]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.09.03-15.44.39:295][779]LogExit: Exiting.
+[2016.09.03-15.44.39:296][779]Log file closed, 09/03/16 17:44:39
